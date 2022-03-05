@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+body {
+top:120px;
+position: absolute;
+ width:100%;
+ height: 100%;
+ background-image: url('images/testzoo8.jpg');
+ background-size: cover;
+ text-align: center;
+ display: flex;
+ justify-content:center;
+}
+input{
+border: 2px solid #FFFF00;
+  border-radius: 5px;
+  width: 200px;
+  height: 30px; 
+}
+label{
+color:#FFFF00;
+font-size: 120%;
+}
+input {
+float:right;}
+form{
+text-align:center;
+}
+.btnAlign{
+ text-align:center;
+}
+.bth{
+background-color: green;
+color: white;
+width: 80px;
+height: 30px; 
+}
+</style>
+<style>
+    button {
+    width: 50px;
+    height: 60px;
+    background-color: #cccccc;
+    font-size: 16px;
+    border-radius: 20px;
+ }
+</style>
+<body>
+<form action="keeper_master_action.jsp">
+<label><h1 style="text-align:center">Registration Keeper</h1></label>
+<label>Name:</label> <input type="text" name="keepername">
+<br><br><br>
+<label>Date Of Birth:</label> <input type="date" name="keeperdateofbirth">
+<br><br><br>
+<label>Email:</label> <input type="email" name="keeperemail">
+<br><br><br>
+<label>Phone:</label> <input type="tel" pattern="[0-9]{2}-[0-9]{9}" placeholder=09-401140922 name="keeperPhone">
+<br><br><br>
+<label>Rank:</label> <input type="text" name="keepertype">
+<br><br><br><br>
+<div class="btnAlign">
+<button  class="bth" type="submit" value="Save">Save</button >
+<button  class="bth" type="reset" value="Reset">Reset</button >
+</div>
+</form>
+</body>
+</html>
